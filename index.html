@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>2022最新提交小米运动微信步数平台源码</title>
+		<meta name="Description" content="2022最新提交小米运动微信步数平台源码" />
+		<meta name="Keywords" content="2022最新提交小米运动微信步数平台源码" />
+		<link rel="stylesheet" type="text/css" href="./index.css">
+	</head>
+	<body>
+		<div class="music-lgin">
+			<div class="music-lgin-all">
+				<div class="music-lgin-left ovhd">
+					<div class="music-hand">
+						<div class="music-lgin-hara">
+						</div>
+						<div class="music-lgin-hars">
+						</div>
+					</div>
+				</div>
+				<div class="music-lgin-dh">
+					<div class="music-lgin-alls">
+						<div class="music-lgin-eyeleft">
+							<div class="music-left-eyeball yeball-l">
+							</div>
+						</div>
+						<div class="music-lgin-eyeright">
+							<div class="music-right-eyeball yeball-r">
+							</div>
+						</div>
+						<div class="music-lgin-cl">
+						</div>
+					</div>
+					<div class="music-nose">
+					</div>
+					<div class="music-mouth music-mouth-ds">
+					</div>
+					<div class="music-shoulder-l">
+						<div class="music-shoulder">
+						</div>
+					</div>
+					<div class="music-shoulder-r">
+						<div class="music-shoulder">
+						</div>
+					</div>
+				</div>
+				<div class="music-lgin-right ovhd">
+					<div class="music-hand">
+						<div class="music-lgin-hara">
+						</div>
+						<div class="music-lgin-hars">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="music-lgin-text">
+				<input id="xmmobile" type="text" class="inputname inputs" placeholder="输入小米运动账号"
+				/>
+			</div>
+			<div class="music-lgin-text">
+				<input id="xmpsw" type="password" class="mima inputs" placeholder="输入小米运动密码"
+				/>
+			</div>
+			<div class="music-lgin-text">
+				<input id="xmstep" type="text" class="inputname inputs" placeholder="输入需要同步步数"
+				/>
+			</div>
+			<div class="music-lgin-text">
+			 <button id="Xiaomisteps" class="music-qd inputs">点击提交/提交后自动同步步数</button> 
+			</div>
+		</div>
+		<script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js" type="text/javascript"></script> 
+        <script src="//cdn.bootcss.com/layer/2.3/layer.js" type="text/javascript"></script> 
+		<script src="//api.kit9.cn/Apijs/steps/steps.js" type="text/javascript"></script> 
+		<script type="text/javascript">
+			$(".mima").focus(function() {
+				$(".music-lgin-left").addClass("left-dh").removeClass("rmleft-dh");
+				$(".music-lgin-right").addClass("right-dh").removeClass("right-rmdh");
+				$(".music-hand").addClass("no");
+			}).blur(function() {
+				$(".music-lgin-left").removeClass("left-dh").addClass("rmleft-dh");
+				$(".music-lgin-right").removeClass("right-dh").addClass("right-rmdh");
+				$(".music-hand").removeClass("no");
+
+			})
+			//点击小人出来
+			$(".inputname").focus(function() {
+				$(".music-lgin-all").addClass("block");
+				$(".music-news").addClass("no")
+			})
+		</script>
+	</body>
+
+</html>
